@@ -1,0 +1,3 @@
+INT,INT.1,INT.2,INT.3,INT.4,INT.5,INT.6,INT.7,INT.8,STRING,INT.9,INT.10,INT.11,STRING.1,INT.12,INT.13,INT.14,INT.15,INT.16,INT.17
+ID(id),可使用(canOpen),开启工会等级(reqLevel),最大报名、占领数量(maxSignCount),鼓舞百分比上限[最高10%](addValueLmt),鼓舞获加成比[每次加成1%](addValue),鼓舞需勋章数(addValueCostCredit),勋章鼓舞获道具(addValueGetItemByCredit),鼓舞需荣誉数(addValueCostHonor),荣誉鼓舞概率(costHonorPer),荣誉鼓舞获道具(addValueGetItemByHonor),默认连胜次数(winCount),最大连胜次数(maxWinCount),购买连胜消耗勋章(addWinCountByCredit),守城、攻城记录玩家数量(),破坏城防，修复城防CD时间(),最大战斗场次(maxFightCount),每日最大捐献人数(),城防效果上限百分比(upperlimit),城防效果下限百分比(lowerlimit)
+1,1,2,2,10,1,20,,100,",100,100,100,100,90,80,75,70,65,60,55,50,50,45,40,35,30,25,20,15",,2,10,",50,100,150,200,300,400,500,600",50,60,2,70,110,30

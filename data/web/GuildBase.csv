@@ -1,0 +1,3 @@
+INT,INT.1,INT.2,INT.3,INT.4,INT.5,INT.6,INT.7,INT.8,INT.9,STRING,STRING.1,INT.10,INT.11,INT.12,INT.13,INT.14,INT.15,INT.16,INT.17,INT.18
+ID(id),可使用(canOpen),开启等级(reqLevel),创建工会消耗勋章(createCost),更换工会间隔日期，单位：天(changeCD),同时申请个数(appCnt),申请时效，单位：天(appCircle),最大申请队列(appLmt),弹劾会长时间，单位：天(fireLeaderTime),弹劾会长CD时间(fireCD),低级拉杆贡献值(lowPushCost),高级拉杆贡献值(highPushCost),拉杆2个相同奖励倍率(reward2),拉杆3个相同奖励倍率(reward3),无工会步兵最高等级(unitBaseLevel),无工会坦克最高等级(tankBaseLevel),无工会飞机最高等级(airBaseLevel),领取福利所需贡献值(rewardCost),日踢人上限(dayKickLmt),日加入人数上限(dayJoinLmt),更换会长间隔时间，单位：分钟(changeLeaderCD)
+1,1,17,150,1,3,2,30,7,3,",20,26,32,40",",200,260,320,400",10,100,8,8,8,60,30,50,240

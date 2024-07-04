@@ -1,0 +1,3 @@
+INT,INT.1,INT.2,INT.3,INT.4,INT.5,INT.6,INT.7,INT.8
+ID(id),可使用(canOpen),开启等级(reqLevel),低级每日免费次数(freeCount),中级搜索消耗勋章(normalCreditCost),高级搜索消耗勋章(highCreditCost),搜索数量(exploreCount),占领次数(mine),中级每日免费次数(freeCount2)
+1,1,22,5,20,100,3,10,5

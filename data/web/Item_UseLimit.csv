@@ -1,0 +1,6 @@
+INT,INT.1,INT.2,INT.3,INT.4,INT.5
+物品ID(id),面板类型(panelType),消耗物品1(needItemID1),数量1(needCount1),消耗物品2(needItemID2),数量2(needCount2)
+30003,1,10007,1,,
+60001,1,10037,1,,
+60002,1,10038,1,,
+60003,1,10039,1,,

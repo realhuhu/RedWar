@@ -1,0 +1,5 @@
+INT,INT.1,INT.2,INT.3,INT.4
+同时上阵数(num),技能最低等级(minSkillLv),血量加成(addHPPer),伤害加成(addDamagePer),相性加成(addRestraint)
+3,10,10,5,30
+4,11,15,10,50
+5,12,20,15,80

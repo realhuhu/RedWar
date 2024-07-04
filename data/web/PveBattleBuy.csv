@@ -1,0 +1,7 @@
+INT,INT.1,INT.2,INT.3
+ID(ID),价格(price),奖励军令数量(actionPoint),VIP等级(vipLevel)
+1,200,5,0
+2,300,5,1
+3,400,5,3
+4,500,5,5
+5,600,5,7

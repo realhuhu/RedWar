@@ -1,0 +1,9 @@
+INT,INT.1,STRING,STRING.1,STRING.2,STRING.3
+阵营ID(id),阵营名称(name),阵营图片(url),旗子(flag),阵营色(color),阵营描述(desc)
+1,飘逸之国,countryIcon1.png,countryFlag1.png,,飘逸之国，首都罗马。
+2,荣耀之国,countryIcon2.png,countryFlag2.png,,荣耀之国，首都华盛顿。
+3,坚毅之国,countryIcon3.png,countryFlag3.png,,坚毅之国，首都伦敦。
+4,铁血之国,countryIcon4.png,countryFlag4.png,,铁血之国，首都柏林。
+5,勇武之国,countryIcon5.png,countryFlag5.png,,勇武之国，首都莫斯科。
+6,雄壮之国,countryIcon6.png,countryFlag6.png,,雄壮之国，首都巴黎。
+21,黑暗联盟,countryIcon21.png,countryFlag21.png,,游牧民族、魔多军团、铁血联盟、地狱犬、黑寡妇、神圣十字军的联合势力。

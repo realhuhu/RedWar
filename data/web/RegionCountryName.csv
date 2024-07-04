@@ -1,0 +1,5 @@
+INT,INT.1,STRING,STRING.1,STRING.2,STRING.3
+阵营ID(id),阵营名称(name),阵营图片(url),旗子(flag),阵营色(color),阵营描述(desc)
+1,苏军,regionIcon1.png,",regionFlag1.png,regionFlag1_2.png,regionFlag1_3.png",,
+2,盟军,regionIcon2.png,",regionFlag2.png,regionFlag2_2.png,regionFlag2_3.png",,
+3,黑暗联盟,regionIcon3.png,",regionFlag3.png",,

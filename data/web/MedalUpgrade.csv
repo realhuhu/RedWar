@@ -1,0 +1,8 @@
+INT,INT.1,INT.2,INT.3,INT.4,INT.5,INT.6,INT.7,INT.8,INT.9,INT.10
+阶数(Rank),奖章属性增加万分比(Attributeincrement),增加攻击万分比(Increaseattack),降低敌方坦克攻万分比(Reduceattack),暴击伤害降低万分比(Reducecriticaistrike),增加暴击率万分比(Increasedcriticaistrike),增加坦克血量万分比(Hpboost),对方坦克减伤降低万分比(Damagereduction),稀有合金ID(GradeitemId),进阶所需稀有合金数量(GradeitemCnt),进阶所需奖章数量(Advancedquantity)
+1,500,200,0,0,0,0,0,10259,200,20
+2,1000,200,400,0,0,0,0,10259,400,40
+3,2000,200,400,600,0,0,0,10259,400,40
+4,3000,200,400,600,700,0,0,10259,400,40
+5,4500,200,400,600,700,800,0,10259,500,50
+6,5500,200,400,600,700,800,1000,10259,500,50

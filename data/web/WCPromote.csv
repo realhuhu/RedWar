@@ -1,0 +1,6 @@
+INT,INT.1,INT.2,INT.3,INT.4,INT.5,STRING,INT.6,INT.7,INT.8,INT.9
+等级(lv),升级经验(exp),勇气加点(courage),魅力加点(charm),战略加点(strategy),统御加点(governing),称号(name),解锁技能(skillType),训练增加次数(trainAddTimes),训练次数(trainTotalTimes),上限(upper)
+1,60,1,1,1,1,初级指挥官,,,,30
+2,150,2,2,2,2,中级指挥官,1,5,5,60
+3,210,4,4,4,4,高级指挥官,2,2,7,90
+4,240,8,8,8,8,特级指挥官,3,3,10,110

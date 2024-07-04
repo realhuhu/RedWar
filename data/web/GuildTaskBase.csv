@@ -1,0 +1,3 @@
+INT,INT.1,INT.2,INT.3,INT.4,STRING,STRING.1
+ID(id),是否开启[0不开 1开](control),每日可完成次数(completeNum),每次出现数量(appearNum),刷新需勋章(medal),任务面板出现日期(date),任务面板出现时间(time)
+1,1,5,3,10,2014/12/18,16:05:00

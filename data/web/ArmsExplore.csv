@@ -1,0 +1,4 @@
+INT,INT.1,INT.2,INT.3,INT.4,INT.5
+流水ID(id),类型(type)0:机械化1:自动化,免费拜访次数(visitcnt),冷却时间(collingtime),制造消耗勋章(costCredit),使用道具(item)
+1001,0,3,14400,30,10115
+1002,1,1,86400,50,10116

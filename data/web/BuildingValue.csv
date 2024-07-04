@@ -1,0 +1,6 @@
+INT,INT.1,INT.2,INT.3
+流水ID(id),权值(Weight),获得的建筑值(buildingValue),获得倍数(multiple)
+1,1000,200,1
+2,300,400,2
+3,150,800,3
+4,100,1600,4

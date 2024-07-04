@@ -1,0 +1,3 @@
+INT,INT.1,INT.2,INT.3
+ID(id),可使用(canOpen),获胜方奖励(WinItemID),失败方奖励ID(LoseItemID)
+1,1,20378,20391

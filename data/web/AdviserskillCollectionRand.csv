@@ -1,0 +1,11 @@
+INT,INT.1,STRING,INT.2,INT.3,INT.4,INT.5,STRING.1,STRING.2
+流水ID(id),物品ID(itemId),物品名称(itemName),物品数量(itemNum),免费权重(freeChance),道具权重(payChance),是否发公告(isBroadcast),iconURL(url),颜色(color)
+1,10143,1级参谋技能书,1,2000,4000,0,canmou1xuexishu.png,0xffffff
+2,10144,2级参谋技能书,1,500,1000,0,canmou2xuexishu.png,0x00ff00
+3,10145,3级参谋技能书,1,0,150,1,canmou3xuexishu.png,0x0000ff
+4,10146,4级参谋技能书,1,0,5,1,canmou4xuexishu.png,0xff00ff
+5,10115,机械制造订单,1,950,1550,0,jixiehuadingdan.png,0xffffff
+6,10116,自动化,1,2500,1550,0,zidonghuadingdan.png,0x00ff00
+7,10106,中级参谋招募卡,1,3500,405,0,zhongjicanmouka.png,0x0000ff
+8,10107,高级参谋招募卡,1,50,100,1,gaojicanmouka.png,0xff00ff
+9,10117,刷新令,1,500,1240,0,shuaxinling.png,0xffffff

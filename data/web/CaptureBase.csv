@@ -1,0 +1,3 @@
+INT,INT.1,INT.2,INT.3,INT.4,INT.5,INT.6,INT.7,INT.8,INT.9,INT.10,INT.11
+ID(id),开启等级(openLevel),最低等级差(downLevel),最高等级差(upLevel),赎金(ransom),鞭笞(hit),摧毁百分比(damage),占领时间[秒](occTime),占领者获得收取资源比例(occValue),可解救玩家次数[奖励][周期：天](saveValueTimes),可解救玩家次数[最大][周期：天](saveTimes),同一个玩家被占领次数[周期：天](occTimes)
+1,10,5,5,50,200,100,86400,10,3,10,99

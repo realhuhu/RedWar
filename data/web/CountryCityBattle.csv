@@ -1,0 +1,3 @@
+INT,INT.1,STRING,STRING.1,INT.2,INT.3,INT.4,INT.5,INT.6,INT.7
+ID(id),可使用(canOpen),血战开启时间(start),血战结束时间(end),可进出时长(canEnterTime),不可进出时长(cantEnterTime),城市保护时间(protectTime),玩家战功倍率(memberReward),发起者奖励战功(attackerReward),胜利方奖励战功(leftReward)
+1,1,0:00,0:00,1800,3600,300,2,2000,1000

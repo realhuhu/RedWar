@@ -1,0 +1,4 @@
+INT,STRING
+ID(messageID),内容(messageContent)
+1,系统：成功邀请好友进入红警大战，将会获得勋章奖励！
+2,系统：成为黄钻用户，好处多多！

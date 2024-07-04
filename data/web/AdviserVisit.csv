@@ -1,0 +1,4 @@
+INT,INT.1,INT.2,INT.3,INT.4,INT.5
+流水ID(id),免费拜访次数(visitcnt),冷却时间(collingtime),拜访消耗勋章(costCredit),使用道具(item),必得高级次数(mustGetTimes)
+1001,1,86400,100,10106,50
+1002,1,259200,500,10107,50

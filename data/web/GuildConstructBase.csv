@@ -1,0 +1,3 @@
+INT,INT.1,INT.2,INT.3,INT.4,INT.5,INT.6,INT.7,INT.8
+ID(id),最大缓存捐献数(store),科技捐献cd(seconds),勋章刷新次数(refresh),勋章刷新消耗勋章数(medal),资源刷新次数(frequency),资源刷新消耗数量(resource),任务最大完成次数(taskmax),捐献奖励公会积分(rewards)
+1,25,1800,5,50,15,1000000,5,1

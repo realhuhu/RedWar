@@ -1,0 +1,5 @@
+INT,STRING,STRING.1,STRING.2,STRING.3,INT.1,INT.2,INT.3
+等级(type),开始日期(startD),开始时间(startT),结束日期(endD),结束时间(endT),比例尺(et),比重(et1),效果(et1)
+1,2017/5/5,10:00:00,2017/5/7,23:59:59,16,1,20
+2,,,,,,3,10
+3,,,,,,4,5

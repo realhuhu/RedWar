@@ -1,0 +1,13 @@
+INT,STRING,STRING.1,INT.1,INT.2,INT.3,INT.4,STRING.2
+官员类型(managerType),描述(desc),官员名称(managerName),主动特权id(manualPowerId),被动权限id(autoPowerId),特殊技能ID(manualId),官员产生类型[1竞技场 2工会战](getType),图标(icon)
+1,公会战世界第一名公会会长,大统领,1,5,16,2,countryManager1.png
+2,公会战本国第一名公会会长,统领,2,6,16,2,countryManager2.png
+3,本国国家竞技场第一名,兵部尚书,3,7,,1,countryManager3.png
+4,公会战本国第二名公会会长,统帅,4,8,,2,countryManager4.png
+5,本国国家竞技场第二名,军师长,,9,,1,countryManager5.png
+6,公会战本国第三名公会会长,副统领,,10,,2,countryManager6.png
+7,本国国家竞技场第三名,陆军统帅,,11,,1,countryManager7.png
+8,本国国家竞技场第四名,空军统帅,,12,,1,countryManager8.png
+9,公会战本国第四名公会会长,纵横家,,13,,2,countryManager9.png
+10,公会战本国第五名公会会长,兵部统帅,,14,,2,countryManager10.png
+11,公会战本国第一名公会成员,统领卫队,,15,,2,

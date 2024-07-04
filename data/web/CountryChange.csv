@@ -1,0 +1,5 @@
+INT,INT.1,INT.2,INT.3,INT.4
+流水ID(id),消耗战功(zhanGong),阵营宝箱数量(chestNum),物品ID(itemId),数量(itemNum)
+50001,3000,1,,
+50002,30000,10,,
+50003,150000,50,,

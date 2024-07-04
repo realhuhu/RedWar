@@ -1,0 +1,6 @@
+INT,INT.1,INT.2,INT.3,INT.4,INT.5,INT.6,INT.7
+同时穿戴数(num),阶别最低等级(minGradeLv),攻击(atk),血量(hp),暴击率(critPer),暴击伤害(critDamage),降低受到暴击的概率(toCritPer),降低对方减伤(reduceOppToDamage)
+3,3,300,300,,,,
+4,4,800,800,,,,
+5,4,800,800,1000,1000,,
+6,5,800,800,1000,1000,1000,1000

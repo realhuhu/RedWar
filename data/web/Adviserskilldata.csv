@@ -1,0 +1,6 @@
+INT,STRING,INT.1,STRING.1,STRING.2,STRING.3,STRING.4,INT.2,STRING.5
+ID(id),技能名称(name),组别(group),技能图标(skillIcon),特效[1为禁疗2为百分比扣血3为偷取攻击](animation),技能简单描述(description),"作用对象id[兵种id,建筑id,1士兵2坦克3飞机4建筑](effId)",修正加成比例百分比(addNum),tips描述(description1)
+10001,切断补给,1,IconSupply.png,1,敌军战略奇策恢复降低,2,600,切断敌军补给，敌军战略奇策恢复降低
+10002,空军压制,2,IconAirdrop.png,2,开局减少敌军最大生命值,2,130,请求空军援助，战斗开局减少敌军生命值
+10003,火力窃取,3,IconSteal.png,3,偷取敌军攻击力,2,100,减少敌军攻击力，同时增加我军攻击力
+10004,装甲侵蚀,4,IconErosion.png,4,降低敌方坦克减伤,2,150,释放EMP，战斗开局时降低参谋所在路敌方坦克减伤
