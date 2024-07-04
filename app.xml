@@ -25,15 +25,15 @@
     <url name="loadingPic" value="imageLoad/loadingPic1_1_2.jpg,imageLoad/loadingPic3.jpg"/>
   </urls>
   <assets>
-    <asset name="lang" value="${storageURL}zh_CN_2024070201.txt"/>
+    <asset name="lang" value="${storageURL}zh_CN_2024070401.txt"/>
     <asset name="fonts" value="${storageURL}flash/Fonts_zh_CN_2024062501.swf"/>
-    <asset name="game" value="${storageURL}flash/RedWar_2024070201.swf"/>
-    <asset name="dll" value="${storageURL}config/dll_2024070202.xml"/>
+    <asset name="game" value="${storageURL}flash/RedWar_2024070402.swf"/>
+    <asset name="dll" value="${storageURL}config/dll_2024070402.xml"/>
   </assets>
   <data>
     <asset name="buildingRes" value="${storageURL}config/BuildingRes_2024061701.dat"/>
     <asset name="armyRes" value="${storageURL}config/ArmyRes_2024010901.dat"/>
-    <asset name="giftList" value="${storageURL}config/FriendGift_2024062702.dat"/>
+    <asset name="giftList" value="${storageURL}config/FriendGift_2024070401.dat"/>
     <asset name="activeList" value="${storageURL}config/ActiveData_2013112601.dat"/>
     <asset name="broadcast" value="${storageURL}config/Broadcast_Dict_2024011601.dat"/>
     <asset name="sysbroadcastData" value="${storageURL}config/BroadcastSystem_2014040801.dat"/>
@@ -63,11 +63,11 @@
     <asset name="useItemRequireData" value="${storageURL}config/Item_UseLimit_2013071601.dat"/>
     <asset name="bagExpasionData" value="${storageURL}config/Bag_Expansion_2024013101.dat"/>
     <asset name="scoreData" value="${storageURL}config/ScoreData_2013053002.dat"/>
-    <asset name="shopData" value="${storageURL}config/ShopItem_2024070201.dat"/>
+    <asset name="shopData" value="${storageURL}config/ShopItem_2024070402.dat"/>
     <asset name="blackList" value="${storageURL}config/blacklist_2014032501.dat"/>
     <asset name="scienceLimitData" value="${storageURL}config/ScienceLimit_2015072102.dat"/>
     <asset name="scienceRegionData" value="${storageURL}config/ScienceRegion_2012121701.dat"/>
-    <asset name="windowRes" value="${storageURL}config/WindowResData_2024070201.dat"/>
+    <asset name="windowRes" value="${storageURL}config/WindowResData_2024070401.dat"/>
     <asset name="npcActive" value="${storageURL}config/NPC_Active_2023121401.dat"/>
     <asset name="cifuData" value="${storageURL}config/CountryBlessing_2017051601.dat"/>
     <asset name="admiralCount" value="${storageURL}config/AdmiralCount_2013010803.dat"/>
@@ -103,7 +103,7 @@
     <asset name="pvpNpcAdmiral" value="${storageURL}config/ArenaNpcAdmiral_2013052701.dat"/>
     <asset name="baseExploreGift" value="${storageURL}config/BaseExploreGift_2014110401.dat"/>
     <asset name="taskData" value="${storageURL}config/Task_2019092901.dat"/>
-    <asset name="buyQ" value="${storageURL}config/QPointShopItem_2024070202.dat"/>
+    <asset name="buyQ" value="${storageURL}config/QPointShopItem_2024070402.dat"/>
     <asset name="equipmentItemData" value="${storageURL}config/ItemCompound_2024022701.dat"/>
     <asset name="superWeapon" value="${storageURL}config/SuperWeaponDamage_2013071801.dat"/>
     <asset name="buildingValue" value="${storageURL}config/BuildingValue_2013081301.dat"/>
@@ -235,7 +235,7 @@
     <asset name="ArtilleryUnitResData" value="${storageURL}config/ArtilleryUnitResData_2024032601.dat"/>
     <asset name="MortarGunnerData" value="${storageURL}config/MortarGunnerData_2024061101.dat"/>
     <asset name="MortarGunnerExp" value="${storageURL}config/MortarGunnerExp_2024052101.dat"/>
-    <asset name="TrenchMortarData" value="${storageURL}config/TrenchMortarData_2023112101.dat"/>
+    <asset name="TrenchMortarData" value="${storageURL}config/TrenchMortarData_2024070401.dat"/>
     <asset name="TrenchMortarEXP" value="${storageURL}config/TrenchMortarEXP_2023053001.dat"/>
     <asset name="TrenchMortarVisit" value="${storageURL}config/TrenchMortarVisit.dat"/>
     <asset name="activityPreciseStrikeCircleReward" value="${storageURL}config/ActivityPreciseStrikeCircleReward_2018020602.dat"/>
@@ -243,7 +243,7 @@
     <asset name="activityZhuanZhuanZhuan" value="${storageURL}config/ActivityZhuanZhuanZhuan_2024010201.dat"/>
     <asset name="trenchMortarLimitedActPoint" value="${storageURL}config/TrenchMortarLimitedActPoint_2023072001.dat"/>
     <asset name="trenchMortarLimitedActRank" value="${storageURL}config/TrenchMortarLimitedActRank_2024062502.dat"/>
-    <asset name="TrenchMortarRebirth" value="${storageURL}config/TrenchMortarRebirth_2023053001.dat"/>
+    <asset name="TrenchMortarRebirth" value="${storageURL}config/TrenchMortarRebirth_2024070401.dat"/>
     <asset name="goalSet" value="${storageURL}config/GoalSet_2018062603.dat"/>
     <asset name="goalReward" value="${storageURL}config/GoalReward.dat"/>
     <asset name="activityShenJiangZhaoMu" value="${storageURL}config/ActivityShenJiangZhaoMu_2018061202.dat"/>
@@ -333,6 +333,7 @@
     <asset name="tuJian" value="${storageURL}config/TuJian_2024060301.dat"/>
     <asset name="zhuangShiWu" value="${storageURL}config/ZhuangShiWu_2024061901.dat"/>
     <asset name="guildMall" value="${storageURL}config/GuildMall.dat"/>
+    <asset name="trenchMortarSkill" value="${storageURL}config/TrenchMortarSkill.dat"/>
   </data>
   <security>
     <asset name="buildingData"/>

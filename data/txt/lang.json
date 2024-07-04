@@ -1,7 +1,7 @@
 {
     "notice": {
-        "notice_txt": "【2024年7月3日】更新公告\n1.修复已知bug。\n2.游戏内系统及活动概率公示地址：https://www.sincetimes.com/trends_detail.html?id=78\n3.更多游戏礼包及活动预告，敬请关注官方微信公众号hjztkfb1（红警之坦克风暴）。",
-        "notice_hall": "【2024年7月3日】更新公告\n1.修复已知bug。\n2.游戏内系统及活动概率公示地址：https://www.sincetimes.com/trends_detail.html?id=78\n3.更多游戏礼包及活动预告，敬请关注官方微信公众号hjztkfb1（红警之坦克风暴）。"
+        "notice_txt": "【2024年7月4日】更新公告\n1.修复已知bug。\n2.专属火炮扩展至20阶，从16阶起新增第5属性，第20阶新增征战、国战、通用属性自选系统，新增专属火炮改造图纸背包道具。\n3.游戏内系统及活动概率公示地址：https://www.sincetimes.com/trends_detail.html?id=78\n4.更多游戏礼包及活动预告，敬请关注官方微信公众号hjztkfb1（红警之坦克风暴）。",
+        "notice_hall": "【2024年7月4日】更新公告\n1.修复已知bug。\n2.专属火炮扩展至20阶，从16阶起新增第5属性，第20阶新增征战、国战、通用属性自选系统，新增专属火炮改造图纸背包道具。\n3.游戏内系统及活动概率公示地址：https://www.sincetimes.com/trends_detail.html?id=78\n4.更多游戏礼包及活动预告，敬请关注官方微信公众号hjztkfb1（红警之坦克风暴）。"
     },
     "feed": {
         "gift": {
@@ -3875,7 +3875,7 @@
         "failMsg_body1": "数据繁忙，请稍后重试",
         "failMsg_body2": "您输入的CD-key不存在，请重新输入。",
         "failMsg_body3": "您输入的CD-key已经被使用过。",
-        "failMsg_body4": "您已兑换奖励，不能再次兑换。",
+        "failMsg_body4": "数据繁忙，请稍后重试",
         "failMsg_body5": "您的兑换次数已经用完，无法再次兑换。",
         "failMsg_body6": "当前帐号未绑定该cdkey，请使用领取cdkey兑换码的账号进行兑换。",
         "failMsg_body7": "无法重复兑换同一个cdk",
@@ -8305,7 +8305,7 @@
         "artillery_admiral_add_crit_range": "暴击幅度",
         "artillery_admiral_add_tank_dmg": "坦克伤害",
         "artillery_admiral_add_none": "未知增幅效果",
-        "artillery_admiral_add_speed": "降低所在路敌方部队移速",
+        "artillery_admiral_add_speed": "降低所在路敌方部队移速#v1#%",
         "artillery_barracks_tab_army": "作战部队",
         "artillery_barracks_tab_artillery": "远程部队",
         "artillery_barracks_own_popu": "远程军团人口：#v1#/#v2#",
