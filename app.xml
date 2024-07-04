@@ -50,7 +50,7 @@
     <asset name="weaponEXPData" value="${storageURL}config/WeaponEXPData_2024052801.dat"/>
     <asset name="weaponSearchSceneData" value="${storageURL}config/WeaponSearchSceneData_2014091601.dat"/>
     <asset name="moonDrop" value="${storageURL}config/MoonDrop_2023090501.dat"/>
-    <asset name="bagItem" value="${storageURL}config/Item_2024070201.dat"/>
+    <asset name="bagItem" value="${storageURL}config/Item_2024070301.dat"/>
     <asset name="itemfragmentData" value="${storageURL}config/Itemfragment_2024032601.dat"/>
     <asset name="slaveBase" value="${storageURL}config/CaptureBase_2017080102.dat"/>
     <asset name="slaveResProduce" value="${storageURL}config/CaptureResProduce_2012112701.dat"/>
@@ -59,7 +59,7 @@
     <asset name="energyStone" value="${storageURL}config/EnergyStoneDrop_2018110601.dat"/>
     <asset name="dailyTaskData" value="${storageURL}config/DailyTask_2020051801.dat"/>
     <asset name="dailyTaskAddedData" value="${storageURL}config/DailyTaskAdded_2014032501.dat"/>
-    <asset name="giftPacketRewardData" value="${storageURL}config/Item_GiftPackage_2024062602.dat"/>
+    <asset name="giftPacketRewardData" value="${storageURL}config/Item_GiftPackage_2024070301.dat"/>
     <asset name="useItemRequireData" value="${storageURL}config/Item_UseLimit_2013071601.dat"/>
     <asset name="bagExpasionData" value="${storageURL}config/Bag_Expansion_2024013101.dat"/>
     <asset name="scoreData" value="${storageURL}config/ScoreData_2013053002.dat"/>
