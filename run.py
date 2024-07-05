@@ -128,7 +128,7 @@ def refresh():
 
 if __name__ == "__main__":
     refresh()
-    app_xml = download_xml("2024070402")
+    app_xml = download_xml("2024070501")
     download_txt(app_xml)
     download_dat(app_xml)
     download_redwar(app_xml)

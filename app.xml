@@ -27,7 +27,7 @@
   <assets>
     <asset name="lang" value="${storageURL}zh_CN_2024070401.txt"/>
     <asset name="fonts" value="${storageURL}flash/Fonts_zh_CN_2024062501.swf"/>
-    <asset name="game" value="${storageURL}flash/RedWar_2024070402.swf"/>
+    <asset name="game" value="${storageURL}flash/RedWar_2024070501.swf"/>
     <asset name="dll" value="${storageURL}config/dll_2024070402.xml"/>
   </assets>
   <data>
@@ -235,7 +235,7 @@
     <asset name="ArtilleryUnitResData" value="${storageURL}config/ArtilleryUnitResData_2024032601.dat"/>
     <asset name="MortarGunnerData" value="${storageURL}config/MortarGunnerData_2024061101.dat"/>
     <asset name="MortarGunnerExp" value="${storageURL}config/MortarGunnerExp_2024052101.dat"/>
-    <asset name="TrenchMortarData" value="${storageURL}config/TrenchMortarData_2024070401.dat"/>
+    <asset name="TrenchMortarData" value="${storageURL}config/TrenchMortarData_2024070501.dat"/>
     <asset name="TrenchMortarEXP" value="${storageURL}config/TrenchMortarEXP_2023053001.dat"/>
     <asset name="TrenchMortarVisit" value="${storageURL}config/TrenchMortarVisit.dat"/>
     <asset name="activityPreciseStrikeCircleReward" value="${storageURL}config/ActivityPreciseStrikeCircleReward_2018020602.dat"/>
