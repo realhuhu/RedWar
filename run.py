@@ -1,10 +1,12 @@
 import json
 import shutil
+import time
 from tqdm import tqdm
 from io import StringIO
 from hashlib import md5
 from pathlib import Path
 from xml.dom.minidom import parse
+from datetime import datetime, timedelta
 
 import requests
 import numpy as np
@@ -21,6 +23,28 @@ web_root = root / "web"
 appURL = "https://100616028cdn-1251006671.file.myqcloud.com/100616028/res/20120522/flash/config_%s.xml"
 storageURL = "https://100616028cdn-1251006671.file.myqcloud.com/100616028/res/20120522/"
 swfURL = "https://100616028cdn-1251006671.file.myqcloud.com/100616028/res/20120522/winPanel/"
+
+
+def get_version():
+    current = datetime.now()
+    seq_num = 4
+
+    while datetime.now() - current < timedelta(days=5):
+        version = f"{current.strftime('%Y%m%d')}{seq_num:02d}"
+        print(f"尝试获取版本{version}")
+
+        if seq_num == 1:
+            current -= timedelta(days=1)
+            seq_num = 4
+        else:
+            seq_num -= 1
+
+        if "-46628" not in requests.get(appURL % version).text:
+            return version
+
+        time.sleep(1)
+
+    return None
 
 
 def download_xml(version):
@@ -127,8 +151,18 @@ def refresh():
 
 
 if __name__ == "__main__":
+    version = get_version()
+
+    if not version:
+        print("未获取到版本")
+        exit()
+
+    if input(f"获取到版本:{get_version()}，是否更新(y/N)>>>:") != "y":
+        print("已退出")
+        exit()
+
     refresh()
-    app_xml = download_xml("2024070501")
+    app_xml = download_xml(version)
     download_txt(app_xml)
     download_dat(app_xml)
     download_redwar(app_xml)
