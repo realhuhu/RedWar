@@ -21,14 +21,14 @@
     <url name="handbookPathURL" value="${storageURL}handbook/"/>
     <url name="statsURL" value=""/>
     <url name="mapURL" value="http://war.redalert.com/"/>
-    <url name="resource" value="activeList:,ad:2015051801,addQQ:2018011901,admiral:2014090201,adviserReinforce:2023040403,adviserVisitUp:2023090701,autoCountryCityBattle:2014031001,back:2015031201,bigRebate:2022120601,blackMarket:2024031201,boss:2013040101,Boss_jubao:,Boss_rank:2023033001,Boss_shuoming:2023033001,Boss_xuanyan:,Boss_zan:,BossStage:2023033001,BossWar:2023033001,buff:2013013001,button:2024062601,card:,cdkey:2015031001,christmas:,christmas2015:2019060301,christmasSkin:2020120701,christmasSnowman:2020120701,country:2014040101,coupon:2013121701,dailySign:2023040401,defend:2022102501,dllAD:2023031501,doubleElevenOfficer:2024010201,dream:2017041001,drink:2024010201,energyStone:2017042401,enlist:2023081801,equip:2023082801,exchangeOfficer:2023040403,extractionAdmiral:,farmer:2013122601,festival:2013013001,fifthAnniversary:2021042701,first:2016070501,flipCards:2020060101,food:2013111201,fool:2023022101,fortune:2022120601,gift:2022092701,give:,goal:2014062701,guide:,guild:2013110601,haizhan:2015011405,halfyear:2021060701,halloween:,happyBuy:2022071201,happyLaboratory:2024060301,happyNewYear:2023010301,hassleBox:2019042301,helpFigthing:2023011101,hero:2021091801,heroFlowers:,holiday:2016042602,holiday1:2015092802,hongbao:2024011601,hreoRecruitSet:,hulk:2021091801,hunt:2023122601,invite:2013010803,inviteFriend:2013070901,jiangxing:2019071601,junhuo:2015031001,laboratory:2024061701,lantern:2014042201,lanternFestival:2020100601,leader:2013052202,levelup:2013120901,link:2013120201,login:2015031801,login28:,long:,lootattack:,lottery:2021060701,lottery2015:2021052401,lover:2013031201,luck:2013040101,luckCard:2018081401,luckNum:2013040101,luckWheel:2024022001,Luckymoney:,Luckymoney_detail:2016012901,Luckymoney_got:,Luckymoney_personal:,Luckymoney_rank:,Luckymoney_send:,Luckymoney_sent:,lvgift:2022110101,magneticRotary:2021091801,may:2017082201,medal:2022071201,month:2023101001,moon:,msg:,nationalDay:2017092601,newPlayer:,newyear:2020101201,novicePacks:,old:2014090201,openbox:,openServer:2016050601,payback:,paygift:2020081001,poker:2014052901,popular:,priceOff:2022121301,pumpkin:2013031901,purple:,PVP0:2013062401,qgift:,qiqi:2014110401,recharge:2014061702,rechargeRank:2023062501,recommend:,regionCountryIcons:,regressionAward:,rotaryTable:2021091801,sad:2013050702,school:,score:,secret:2012122701,seven:2013122301,sevenDays:2019092401,shiming:2016031101,sns:2014051301,soul:2021080201,specialRight:2017042801,star:2022112901,strategyBox:2017120501,strike:,superBloodyBattle:,superRecruitCard:2023110101,sword:2013070901,tanbao:2015042101,tanks:,tanksBox:2022120601,teach:2024010201,threeDays:,timeLimit:2024061901,timelimitGiving:,timelimitUp:2019052301,topupGift:2023110101,twice:,UniteRegionGift:2020010801,upgrade:,vip:2016112201,vipAward:2022102101,vipDemand:2018011101,vipGift:2013090301,weaponShop:,winner:,words:2013062501,workmanshipTip:,xiangou:2016040502,youli:2013121703"/>
+    <url name="resource" value="activeList:,ad:2015051801,addQQ:2018011901,admiral:2014090201,adviserReinforce:2023040403,adviserVisitUp:2023090701,autoCountryCityBattle:2014031001,back:2015031201,bigRebate:2022120601,blackMarket:2024031201,boss:2013040101,Boss_jubao:,Boss_rank:2023033001,Boss_shuoming:2023033001,Boss_xuanyan:,Boss_zan:,BossStage:2023033001,BossWar:2023033001,buff:2013013001,button:2024070801,card:,cdkey:2015031001,christmas:,christmas2015:2019060301,christmasSkin:2020120701,christmasSnowman:2020120701,country:2014040101,coupon:2013121701,dailySign:2023040401,defend:2022102501,dllAD:2023031501,doubleElevenOfficer:2024010201,dream:2017041001,drink:2024010201,energyStone:2017042401,enlist:2023081801,equip:2023082801,exchangeOfficer:2023040403,extractionAdmiral:,farmer:2013122601,festival:2013013001,fifthAnniversary:2021042701,first:2016070501,flipCards:2020060101,food:2013111201,fool:2023022101,fortune:2022120601,gift:2022092701,give:,goal:2014062701,guide:,guild:2013110601,haizhan:2015011405,halfyear:2021060701,halloween:,happyBuy:2022071201,happyLaboratory:2024060301,happyNewYear:2023010301,hassleBox:2019042301,helpFigthing:2023011101,hero:2021091801,heroFlowers:,holiday:2016042602,holiday1:2015092802,hongbao:2024011601,hreoRecruitSet:,hulk:2021091801,hunt:2023122601,invite:2013010803,inviteFriend:2013070901,jiangxing:2019071601,junhuo:2015031001,laboratory:2024061701,lantern:2014042201,lanternFestival:2020100601,leader:2013052202,levelup:2013120901,link:2013120201,login:2015031801,login28:,long:,lootattack:,lottery:2021060701,lottery2015:2021052401,lover:2013031201,luck:2013040101,luckCard:2018081401,luckNum:2013040101,luckWheel:2024022001,Luckymoney:,Luckymoney_detail:2016012901,Luckymoney_got:,Luckymoney_personal:,Luckymoney_rank:,Luckymoney_send:,Luckymoney_sent:,lvgift:2022110101,magneticRotary:2021091801,may:2017082201,medal:2022071201,month:2023101001,moon:,msg:,nationalDay:2017092601,newPlayer:,newyear:2020101201,novicePacks:,old:2014090201,openbox:,openServer:2016050601,payback:,paygift:2020081001,poker:2014052901,popular:,priceOff:2022121301,pumpkin:2013031901,purple:,PVP0:2013062401,qgift:,qiqi:2014110401,recharge:2014061702,rechargeRank:2023062501,recommend:,regionCountryIcons:,regressionAward:,rotaryTable:2021091801,sad:2013050702,school:,score:,secret:2012122701,seven:2013122301,sevenDays:2019092401,shiming:2016031101,sns:2014051301,soul:2021080201,specialRight:2017042801,star:2022112901,strategyBox:2017120501,strike:,superBloodyBattle:,superRecruitCard:2023110101,sword:2013070901,tanbao:2015042101,tanks:,tanksBox:2022120601,teach:2024010201,threeDays:,timeLimit:2024061901,timelimitGiving:,timelimitUp:2019052301,topupGift:2023110101,twice:,UniteRegionGift:2020010801,upgrade:,vip:2016112201,vipAward:2022102101,vipDemand:2018011101,vipGift:2013090301,weaponShop:,winner:,words:2013062501,workmanshipTip:,xiangou:2016040502,youli:2013121703"/>
     <url name="loadingPic" value="imageLoad/loadingPic1_1_2.jpg,imageLoad/loadingPic3.jpg"/>
   </urls>
   <assets>
-    <asset name="lang" value="${storageURL}zh_CN_2024070401.txt"/>
+    <asset name="lang" value="${storageURL}zh_CN_2024070901.txt"/>
     <asset name="fonts" value="${storageURL}flash/Fonts_zh_CN_2024062501.swf"/>
-    <asset name="game" value="${storageURL}flash/RedWar_2024070501.swf"/>
-    <asset name="dll" value="${storageURL}config/dll_2024070402.xml"/>
+    <asset name="game" value="${storageURL}flash/RedWar_2024070901.swf"/>
+    <asset name="dll" value="${storageURL}config/dll_2024070902.xml"/>
   </assets>
   <data>
     <asset name="buildingRes" value="${storageURL}config/BuildingRes_2024061701.dat"/>
@@ -50,7 +50,7 @@
     <asset name="weaponEXPData" value="${storageURL}config/WeaponEXPData_2024052801.dat"/>
     <asset name="weaponSearchSceneData" value="${storageURL}config/WeaponSearchSceneData_2014091601.dat"/>
     <asset name="moonDrop" value="${storageURL}config/MoonDrop_2023090501.dat"/>
-    <asset name="bagItem" value="${storageURL}config/Item_2024070301.dat"/>
+    <asset name="bagItem" value="${storageURL}config/Item_2024070801.dat"/>
     <asset name="itemfragmentData" value="${storageURL}config/Itemfragment_2024032601.dat"/>
     <asset name="slaveBase" value="${storageURL}config/CaptureBase_2017080102.dat"/>
     <asset name="slaveResProduce" value="${storageURL}config/CaptureResProduce_2012112701.dat"/>
@@ -59,15 +59,15 @@
     <asset name="energyStone" value="${storageURL}config/EnergyStoneDrop_2018110601.dat"/>
     <asset name="dailyTaskData" value="${storageURL}config/DailyTask_2020051801.dat"/>
     <asset name="dailyTaskAddedData" value="${storageURL}config/DailyTaskAdded_2014032501.dat"/>
-    <asset name="giftPacketRewardData" value="${storageURL}config/Item_GiftPackage_2024070301.dat"/>
+    <asset name="giftPacketRewardData" value="${storageURL}config/Item_GiftPackage_2024070801.dat"/>
     <asset name="useItemRequireData" value="${storageURL}config/Item_UseLimit_2013071601.dat"/>
     <asset name="bagExpasionData" value="${storageURL}config/Bag_Expansion_2024013101.dat"/>
     <asset name="scoreData" value="${storageURL}config/ScoreData_2013053002.dat"/>
-    <asset name="shopData" value="${storageURL}config/ShopItem_2024070402.dat"/>
+    <asset name="shopData" value="${storageURL}config/ShopItem_2024070801.dat"/>
     <asset name="blackList" value="${storageURL}config/blacklist_2014032501.dat"/>
     <asset name="scienceLimitData" value="${storageURL}config/ScienceLimit_2015072102.dat"/>
     <asset name="scienceRegionData" value="${storageURL}config/ScienceRegion_2012121701.dat"/>
-    <asset name="windowRes" value="${storageURL}config/WindowResData_2024070401.dat"/>
+    <asset name="windowRes" value="${storageURL}config/WindowResData_2024070801.dat"/>
     <asset name="npcActive" value="${storageURL}config/NPC_Active_2023121401.dat"/>
     <asset name="cifuData" value="${storageURL}config/CountryBlessing_2017051601.dat"/>
     <asset name="admiralCount" value="${storageURL}config/AdmiralCount_2013010803.dat"/>
@@ -78,7 +78,7 @@
     <asset name="pveCustomSet" value="${storageURL}config/PVECustomSet_2023111301.dat"/>
     <asset name="pveCustomAdmiral" value="${storageURL}config/PVECustomAdmiral_2023110701.dat"/>
     <asset name="pveCustomGift" value="${storageURL}config/PVECustomGift_2023110701.dat"/>
-    <asset name="gameConstantSet" value="${storageURL}config/GameConstantSet_2024070202.dat"/>
+    <asset name="gameConstantSet" value="${storageURL}config/GameConstantSet_2024070901.dat"/>
     <asset name="npcDefGift" value="${storageURL}config/NPCDefGift_2020052501.dat"/>
     <asset name="box" value="${storageURL}config/Box_StakeItem_2024052801.dat"/>
     <asset name="secretTime" value="${storageURL}config/SecretTime_2017010301.dat"/>
@@ -103,7 +103,7 @@
     <asset name="pvpNpcAdmiral" value="${storageURL}config/ArenaNpcAdmiral_2013052701.dat"/>
     <asset name="baseExploreGift" value="${storageURL}config/BaseExploreGift_2014110401.dat"/>
     <asset name="taskData" value="${storageURL}config/Task_2019092901.dat"/>
-    <asset name="buyQ" value="${storageURL}config/QPointShopItem_2024070402.dat"/>
+    <asset name="buyQ" value="${storageURL}config/QPointShopItem_2024070901.dat"/>
     <asset name="equipmentItemData" value="${storageURL}config/ItemCompound_2024022701.dat"/>
     <asset name="superWeapon" value="${storageURL}config/SuperWeaponDamage_2013071801.dat"/>
     <asset name="buildingValue" value="${storageURL}config/BuildingValue_2013081301.dat"/>
@@ -130,7 +130,7 @@
     <asset name="vipRight" value="${storageURL}config/VipRight_2023022101.dat"/>
     <asset name="vipCard" value="${storageURL}config/VipCard.dat"/>
     <asset name="farmer" value="${storageURL}config/Farmer_2013122301.dat"/>
-    <asset name="activeshop" value="${storageURL}config/ActiveShop_2024070201.dat"/>
+    <asset name="activeshop" value="${storageURL}config/ActiveShop_2024070901.dat"/>
     <asset name="CountryDailyGift" value="${storageURL}config/CountryDailyGift_2020083101.dat"/>
     <asset name="autoCountryCityBattle" value="${storageURL}config/AutoCountryCityBattle_2023121901.dat"/>
     <asset name="itemCompound" value="${storageURL}config/ItemCompound_2024022701.dat"/>
@@ -140,7 +140,7 @@
     <asset name="PveBattleBuy" value="${storageURL}config/PveBattleBuy_2014041702.dat"/>
     <asset name="poker" value="${storageURL}config/CardReward_2014052701.dat"/>
     <asset name="goal" value="${storageURL}config/GoalCountry_2014062701.dat"/>
-    <asset name="heroVisitData" value="${storageURL}config/HeroVisit_2024070201.dat"/>
+    <asset name="heroVisitData" value="${storageURL}config/HeroVisit_2024070801.dat"/>
     <asset name="heroCountData" value="${storageURL}config/HeroCount_2014061501.dat"/>
     <asset name="heroUpgradeData" value="${storageURL}config/HeroUpgrade_2014061501.dat"/>
     <asset name="heroLetterData" value="${storageURL}config/HeroLetter_2021091801.dat"/>
@@ -212,7 +212,7 @@
     <asset name="vipColonyData" value="${storageURL}config/VipColony_2016120701.dat"/>
     <asset name="weaponComponentCraft" value="${storageURL}config/WeaponComponentCraft_2017110101.dat"/>
     <asset name="luckybagCashing" value="${storageURL}config/luckybagCashing_2021042901.dat"/>
-    <asset name="activityWeightReward" value="${storageURL}config/ActivityWeightReward_2024070201.dat"/>
+    <asset name="activityWeightReward" value="${storageURL}config/ActivityWeightReward_2024070801.dat"/>
     <asset name="blackBuy" value="${storageURL}config/BlackBuy_2024031901.dat"/>
     <asset name="blackSale" value="${storageURL}config/BlackSale_2024031201.dat"/>
     <asset name="fierceFightingTask" value="${storageURL}config/FierceFightingTask.dat"/>
@@ -221,7 +221,7 @@
     <asset name="wCTankRemould" value="${storageURL}config/WCTankRemould_2024010901.dat"/>
     <asset name="wCRemouldSkillInfo" value="${storageURL}config/WCRemouldSkillInfo_2018071101.dat"/>
     <asset name="countryHonorBuildingBase" value="${storageURL}config/CountryHonorBuildingBase_2017081504.dat"/>
-    <asset name="gameReward" value="${storageURL}config/GameReward_2024070201.dat"/>
+    <asset name="gameReward" value="${storageURL}config/GameReward_2024070801.dat"/>
     <asset name="consumeAPBaseReward" value="${storageURL}config/ThrewCostRankReward_2017092602.dat"/>
     <asset name="ExploreChouJiangReward" value="${storageURL}config/ExploreChouJiangReward_2023090501.dat"/>
     <asset name="ExploreChouJiangPointReward" value="${storageURL}config/ExploreChouJiangPointReward_2017091401.dat"/>
@@ -242,7 +242,7 @@
     <asset name="activityPreciseStrikeReward" value="${storageURL}config/ActivityPreciseStrikeReward_2020121401.dat"/>
     <asset name="activityZhuanZhuanZhuan" value="${storageURL}config/ActivityZhuanZhuanZhuan_2024010201.dat"/>
     <asset name="trenchMortarLimitedActPoint" value="${storageURL}config/TrenchMortarLimitedActPoint_2023072001.dat"/>
-    <asset name="trenchMortarLimitedActRank" value="${storageURL}config/TrenchMortarLimitedActRank_2024062502.dat"/>
+    <asset name="trenchMortarLimitedActRank" value="${storageURL}config/TrenchMortarLimitedActRank_2024070901.dat"/>
     <asset name="TrenchMortarRebirth" value="${storageURL}config/TrenchMortarRebirth_2024070401.dat"/>
     <asset name="goalSet" value="${storageURL}config/GoalSet_2018062603.dat"/>
     <asset name="goalReward" value="${storageURL}config/GoalReward.dat"/>
@@ -319,7 +319,7 @@
     <asset name="activeQQgamejizi" value="${storageURL}config/ActiveQQgamejizi.dat"/>
     <asset name="activeTehuishop" value="${storageURL}config/ActiveTehuishop_2024012901.dat"/>
     <asset name="activezhuyue" value="${storageURL}config/Activezhuyue.dat"/>
-    <asset name="chaozhiZixuan" value="${storageURL}config/ChaozhiZixuan_2024051301.dat"/>
+    <asset name="chaozhiZixuan" value="${storageURL}config/ChaozhiZixuan_2024070801.dat"/>
     <asset name="chaozhiZixuan1" value="${storageURL}config/ChaozhiZixuan1_2024051301.dat"/>
     <asset name="mortarGunnerRank" value="${storageURL}config/MortarGunnerRank_2024052101.dat"/>
     <asset name="activeHalloweenCandyParty" value="${storageURL}config/ActiveHalloweenCandyParty_2024061902.dat"/>
@@ -329,9 +329,9 @@
     <asset name="activeSpringblessing1" value="${storageURL}config/ActiveSpringblessing1_2024013001.dat"/>
     <asset name="activeWishTree" value="${storageURL}config/ActiveWishTree_2024061701.dat"/>
     <asset name="active12Yjizi" value="${storageURL}config/Active12Yjizi_2024042901.dat"/>
-    <asset name="shuXingJiaCheng" value="${storageURL}config/ShuXingJiaCheng_2024070201.dat"/>
+    <asset name="shuXingJiaCheng" value="${storageURL}config/ShuXingJiaCheng_2024070801.dat"/>
     <asset name="tuJian" value="${storageURL}config/TuJian_2024060301.dat"/>
-    <asset name="zhuangShiWu" value="${storageURL}config/ZhuangShiWu_2024061901.dat"/>
+    <asset name="zhuangShiWu" value="${storageURL}config/ZhuangShiWu_2024070801.dat"/>
     <asset name="guildMall" value="${storageURL}config/GuildMall.dat"/>
     <asset name="trenchMortarSkill" value="${storageURL}config/TrenchMortarSkill.dat"/>
   </data>

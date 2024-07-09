@@ -157,7 +157,7 @@ if __name__ == "__main__":
         print("未获取到版本")
         exit()
 
-    if input(f"获取到版本:{get_version()}，是否更新(y/N)>>>:") != "y":
+    if input(f"获取到版本:{version}，是否更新(y/N)>>>:") != "y":
         print("已退出")
         exit()
 
