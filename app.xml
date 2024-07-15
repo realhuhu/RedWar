@@ -28,7 +28,7 @@
     <asset name="lang" value="${storageURL}zh_CN_2024070901.txt"/>
     <asset name="fonts" value="${storageURL}flash/Fonts_zh_CN_2024062501.swf"/>
     <asset name="game" value="${storageURL}flash/RedWar_2024070901.swf"/>
-    <asset name="dll" value="${storageURL}config/dll_2024070902.xml"/>
+    <asset name="dll" value="${storageURL}config/dll_2024071502.xml"/>
   </assets>
   <data>
     <asset name="buildingRes" value="${storageURL}config/BuildingRes_2024061701.dat"/>
@@ -78,7 +78,7 @@
     <asset name="pveCustomSet" value="${storageURL}config/PVECustomSet_2023111301.dat"/>
     <asset name="pveCustomAdmiral" value="${storageURL}config/PVECustomAdmiral_2023110701.dat"/>
     <asset name="pveCustomGift" value="${storageURL}config/PVECustomGift_2023110701.dat"/>
-    <asset name="gameConstantSet" value="${storageURL}config/GameConstantSet_2024070901.dat"/>
+    <asset name="gameConstantSet" value="${storageURL}config/GameConstantSet_2024071502.dat"/>
     <asset name="npcDefGift" value="${storageURL}config/NPCDefGift_2020052501.dat"/>
     <asset name="box" value="${storageURL}config/Box_StakeItem_2024052801.dat"/>
     <asset name="secretTime" value="${storageURL}config/SecretTime_2017010301.dat"/>
@@ -103,7 +103,7 @@
     <asset name="pvpNpcAdmiral" value="${storageURL}config/ArenaNpcAdmiral_2013052701.dat"/>
     <asset name="baseExploreGift" value="${storageURL}config/BaseExploreGift_2014110401.dat"/>
     <asset name="taskData" value="${storageURL}config/Task_2019092901.dat"/>
-    <asset name="buyQ" value="${storageURL}config/QPointShopItem_2024070901.dat"/>
+    <asset name="buyQ" value="${storageURL}config/QPointShopItem_2024071502.dat"/>
     <asset name="equipmentItemData" value="${storageURL}config/ItemCompound_2024022701.dat"/>
     <asset name="superWeapon" value="${storageURL}config/SuperWeaponDamage_2013071801.dat"/>
     <asset name="buildingValue" value="${storageURL}config/BuildingValue_2013081301.dat"/>
