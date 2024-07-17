@@ -1,7 +1,7 @@
 STRING,STRING.1
 (resKey),(url)
 AdmiralFirstWindow,AdmiralFirstWindow.swf
-AdmiralOptWindow,AdmiralOptWindow_2024040201.swf
+AdmiralOptWindow,AdmiralOptWindow_2024071501.swf
 AdmiralInfoWindow,AdmiralInfoWindow_2013071001.swf
 AdmiralDelWindow,AdmiralDelWindow.swf
 AdmiralAddWindow,AdmiralAddWindow_2015112301.swf
@@ -236,7 +236,7 @@ GoldenPigFortunePanel,GoldenPigFortunePanel_2021011801.swf
 GoldenPigFortuneRankingPanel,GoldenPigFortuneRankingPanel_2022112901.swf
 GetRedPackagePanel,GetRedPackagePanel.swf
 GiftPrecisionAtvWnd,GiftPrecisionAtvWnd.swf
-GiftVIPAtvWnd,GiftVIPAtvWnd_2023110101.swf
+GiftVIPAtvWnd,GiftVIPAtvWnd_2024071501.swf
 MasterOfGlodenGeneralAtvWnd,MasterOfGlodenGeneralAtvWnd_2020072701.swf
 TenDrawOfGlodenGeneralAtvWnd,TenDrawOfGlodenGeneralAtvWnd_2023081801.swf
 Lottery2015AtvWnd,Lottery2015AtvWnd_2023041701.swf
@@ -258,7 +258,7 @@ OldPlayerPanel,OldPlayerPanel_2020082401.swf
 BrotherAReunionPanel,BrotherAReunionPanel_2020082401.swf
 RankingListWindow,RankingListWindow.swf
 NumberSelectPanel,NumberSelectPanel.swf
-GoldBroadcastPanel,GoldBroadcastPanel_2024052101.swf
+GoldBroadcastPanel,GoldBroadcastPanel_2024071501.swf
 GoldPreviewPanel,GoldPreviewPanel_2023013001.swf
 GoldSnatchTreasurePanel,GoldSnatchTreasurePanel_2024052101.swf
 SixthAnniversaryQdianPanel,SixthAnniversaryQdianPanel_2021042901.swf
@@ -372,7 +372,7 @@ SKIN_BATTLEPASS_3004,SKIN_BATTLEPASS_3004_2024042901.swf
 BanCountDownPanel,BanCountDownPanel.swf
 QPointChoicepPackPanel,QPointChoicepPackPanel_2024070801.swf
 SKIN_AMYDAY_2006,SKIN_AMYDAY_2006_2024042901.swf
-CandyPartyPanel,CandyPartyPanel_2024042501.swf
+CandyPartyPanel,CandyPartyPanel_2024071601.swf
 SKIN_BATTLEPASS_3005,SKIN_BATTLEPASS_3005_2024042901.swf
 PVERankingPanel,PVERankingPanel.swf
 SKIN_AMYDAY_2007,SKIN_AMYDAY_2007_2024042901.swf
@@ -399,7 +399,7 @@ ChristmasTrees2AdmiralPanel,ChristmasTrees2AdmiralPanel.swf
 SKIN_BATTLEPASS_3010,SKIN_BATTLEPASS_3010_2024042901.swf
 SKIN_AMYDAY_2012,SKIN_AMYDAY_2012_2024042901.swf
 12AnniversaryCharsetPanel,12AnniversaryCharsetPanel_2024043001.swf
-CakeFactoryPanel,CakeFactoryPanel_2024070801.swf
+CakeFactoryPanel,CakeFactoryPanel_2024071501.swf
 SKIN_BATTLEPASS_3011,SKIN_BATTLEPASS_3011_2024042901.swf
 SKIN_AMYDAY_2013,SKIN_AMYDAY_2013.swf
 ChristmasTrees2PartsPanel,ChristmasTrees2PartsPanel_2024060501.swf
@@ -410,3 +410,4 @@ PlayMonthlyCardGiftPackPanel,PlayMonthlyCardGiftPackPanel_2024062801.swf
 SkinEncoreBuyPanel,SkinEncoreBuyPanel.swf
 SKIN_BATTLEPASS_3013,SKIN_BATTLEPASS_3013.swf
 SKIN_AMYDAY_2015,SKIN_AMYDAY_2015.swf
+StudyPlanPanel,StudyPlanPanel_2024071601.swf

@@ -159,21 +159,21 @@ def refresh():
 
 
 if __name__ == "__main__":
-    version = get_version()
-
-    if not version:
-        print("未获取到版本")
-        exit()
-
-    if input(f"获取到版本:{version}，是否更新(y/N)>>>:") != "y":
-        print("已退出")
-        exit()
-
-    refresh()
-    app_xml = download_xml(version)
-    download_txt(app_xml)
-    download_dat(app_xml)
-    download_redwar(app_xml)
+    # version = get_version()
+    #
+    # if not version:
+    #     print("未获取到版本")
+    #     exit()
+    #
+    # if input(f"获取到版本:{version}，是否更新(y/N)>>>:") != "y":
+    #     print("已退出")
+    #     exit()
+    #
+    # refresh()
+    # app_xml = download_xml(version)
+    # download_txt(app_xml)
+    # download_dat(app_xml)
+    # download_redwar(app_xml)
     decode_redwar(Path(input("输入binary路径>>>:")))
     download_img()
     rename(img_root)
