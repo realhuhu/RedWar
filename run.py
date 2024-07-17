@@ -19,6 +19,7 @@ img_root = root / "img"
 swf_root = root / "swf"
 txt_root = root / "txt"
 web_root = root / "web"
+bin_root = root / "bin"
 
 appURL = "https://100616028cdn-1251006671.file.myqcloud.com/100616028/res/20120522/flash/config_%s.xml"
 storageURL = "https://100616028cdn-1251006671.file.myqcloud.com/100616028/res/20120522/"
@@ -93,6 +94,12 @@ def download_redwar(xml):
             extract(path, img_root / name)
 
 
+def decode_redwar(path: Path):
+    for i in path.iterdir():
+        df = pd.read_csv(i, sep="\t", encoding="gbk")
+        df.to_csv(bin_root / f"{str(i).split('.')[-2].split('_')[1]}.csv", index=False)
+
+
 def download_txt(xml):
     for i in xml.getElementsByTagName("assets")[0].childNodes:
         if i.nodeName != "asset":
@@ -148,6 +155,7 @@ def refresh():
     swf_root.mkdir(exist_ok=True, parents=True)
     txt_root.mkdir(exist_ok=True, parents=True)
     web_root.mkdir(exist_ok=True, parents=True)
+    bin_root.mkdir(exist_ok=True, parents=True)
 
 
 if __name__ == "__main__":
@@ -166,5 +174,6 @@ if __name__ == "__main__":
     download_txt(app_xml)
     download_dat(app_xml)
     download_redwar(app_xml)
+    decode_redwar(Path(input("输入binary路径>>>:")))
     download_img()
     rename(img_root)

@@ -1,0 +1,4 @@
+INT,INT.1,INT.2,INT.3,INT.4,Unnamed: 5
+ID(id),类型 1:会长使用 2:排行第一使用(type),持续时间 单位秒(cdTime),增加攻击力 百分比(attPer),名称(name),(icon)
+1,1,3600,5,荣誉号角,honor.png
+2,2,1800,10,冲锋号角,assault.png

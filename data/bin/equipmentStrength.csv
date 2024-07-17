@@ -1,0 +1,5 @@
+INT,INT.1,INT.2,INT.3,INT.4,INT.5
+流水ID(id),强化等级(strengthLv),增加属性(abilityAdd),增加相性(toAbilityAdd),增加属性百分比(abilityAddPer),增加相性百分比(toAbilityAddPer)
+1001,8,2,2,,
+1002,10,4,4,,
+1003,12,6,6,,
