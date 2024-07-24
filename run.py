@@ -1,6 +1,6 @@
+import re
 import json
 import shutil
-import time
 from tqdm import tqdm
 from io import StringIO
 from hashlib import md5
@@ -43,8 +43,6 @@ def get_version():
         if "-46628" not in requests.get(appURL % version).text:
             return version
 
-        time.sleep(1)
-
     return None
 
 
@@ -67,7 +65,7 @@ def download_dat(xml):
 
         url = i.getAttribute("value").replace("${storageURL}", storageURL)
         name = url.split("/")[-1].split(".")[0]
-        name = name.split("_20")[0]
+        name = re.sub(r'_\d+', '', name)
 
         print(f"获取dat：{name}")
 
@@ -168,12 +166,12 @@ if __name__ == "__main__":
     # if input(f"获取到版本:{version}，是否更新(y/N)>>>:") != "y":
     #     print("已退出")
     #     exit()
-    #
+
     # refresh()
-    # app_xml = download_xml(version)
+    app_xml = download_xml("285443446")
     # download_txt(app_xml)
-    # download_dat(app_xml)
+    download_dat(app_xml)
     # download_redwar(app_xml)
-    decode_redwar(Path(input("输入binary路径>>>:")))
-    download_img()
-    rename(img_root)
+    # decode_redwar(Path(input("输入binary路径>>>:")))
+    # download_img()
+    # rename(img_root)

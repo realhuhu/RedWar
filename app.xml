@@ -25,10 +25,10 @@
     <url name="loadingPic" value="imageLoad/loadingPic1_1_2.jpg,imageLoad/loadingPic3.jpg"/>
   </urls>
   <assets>
-    <asset name="lang" value="${storageURL}zh_CN_2024071501.txt"/>
+    <asset name="lang" value="${storageURL}zh_CN_19564543.txt"/>
     <asset name="fonts" value="${storageURL}flash/Fonts_zh_CN_2024071501.swf"/>
     <asset name="game" value="${storageURL}flash/RedWar_2024071601.swf"/>
-    <asset name="dll" value="${storageURL}config/dll_2024071601.xml"/>
+    <asset name="dll" value="${storageURL}config/dll_287785675.xml"/>
   </assets>
   <data>
     <asset name="buildingRes" value="${storageURL}config/BuildingRes_2024061701.dat"/>
@@ -50,7 +50,7 @@
     <asset name="weaponEXPData" value="${storageURL}config/WeaponEXPData_2024052801.dat"/>
     <asset name="weaponSearchSceneData" value="${storageURL}config/WeaponSearchSceneData_2014091601.dat"/>
     <asset name="moonDrop" value="${storageURL}config/MoonDrop_2023090501.dat"/>
-    <asset name="bagItem" value="${storageURL}config/Item_2024071501.dat"/>
+    <asset name="bagItem" value="${storageURL}config/Item_197656554.dat"/>
     <asset name="itemfragmentData" value="${storageURL}config/Itemfragment_2024032601.dat"/>
     <asset name="slaveBase" value="${storageURL}config/CaptureBase_2017080102.dat"/>
     <asset name="slaveResProduce" value="${storageURL}config/CaptureResProduce_2012112701.dat"/>
@@ -63,7 +63,7 @@
     <asset name="useItemRequireData" value="${storageURL}config/Item_UseLimit_2013071601.dat"/>
     <asset name="bagExpasionData" value="${storageURL}config/Bag_Expansion_2024013101.dat"/>
     <asset name="scoreData" value="${storageURL}config/ScoreData_2013053002.dat"/>
-    <asset name="shopData" value="${storageURL}config/ShopItem_2024071501.dat"/>
+    <asset name="shopData" value="${storageURL}config/ShopItem_15778954.dat"/>
     <asset name="blackList" value="${storageURL}config/blacklist_2014032501.dat"/>
     <asset name="scienceLimitData" value="${storageURL}config/ScienceLimit_2015072102.dat"/>
     <asset name="scienceRegionData" value="${storageURL}config/ScienceRegion_2012121701.dat"/>
@@ -73,12 +73,12 @@
     <asset name="admiralCount" value="${storageURL}config/AdmiralCount_2013010803.dat"/>
     <asset name="admiralSoulCost" value="${storageURL}config/AdmiralSoulCost_2015112301.dat"/>
     <asset name="admiralUpgrade" value="${storageURL}config/AdmiralUpgrade_2013111901.dat"/>
-    <asset name="admiralVisit" value="${storageURL}config/AdmiralVisit_2024071501.dat"/>
+    <asset name="admiralVisit" value="${storageURL}config/AdmiralVisit_13546534.dat"/>
     <asset name="countryData" value="${storageURL}config/CountryData_2013010803.dat"/>
     <asset name="pveCustomSet" value="${storageURL}config/PVECustomSet_2023111301.dat"/>
     <asset name="pveCustomAdmiral" value="${storageURL}config/PVECustomAdmiral_2023110701.dat"/>
     <asset name="pveCustomGift" value="${storageURL}config/PVECustomGift_2023110701.dat"/>
-    <asset name="gameConstantSet" value="${storageURL}config/GameConstantSet_2024071601.dat"/>
+    <asset name="gameConstantSet" value="${storageURL}config/GameConstantSet_146576576.dat"/>
     <asset name="npcDefGift" value="${storageURL}config/NPCDefGift_2020052501.dat"/>
     <asset name="box" value="${storageURL}config/Box_StakeItem_2024052801.dat"/>
     <asset name="secretTime" value="${storageURL}config/SecretTime_2017010301.dat"/>
@@ -103,7 +103,7 @@
     <asset name="pvpNpcAdmiral" value="${storageURL}config/ArenaNpcAdmiral_2013052701.dat"/>
     <asset name="baseExploreGift" value="${storageURL}config/BaseExploreGift_2014110401.dat"/>
     <asset name="taskData" value="${storageURL}config/Task_2019092901.dat"/>
-    <asset name="buyQ" value="${storageURL}config/QPointShopItem_2024071602.dat"/>
+    <asset name="buyQ" value="${storageURL}config/QPointShopItem_15876756.dat"/>
     <asset name="equipmentItemData" value="${storageURL}config/ItemCompound_2024022701.dat"/>
     <asset name="superWeapon" value="${storageURL}config/SuperWeaponDamage_2013071801.dat"/>
     <asset name="buildingValue" value="${storageURL}config/BuildingValue_2013081301.dat"/>
@@ -130,7 +130,7 @@
     <asset name="vipRight" value="${storageURL}config/VipRight_2023022101.dat"/>
     <asset name="vipCard" value="${storageURL}config/VipCard.dat"/>
     <asset name="farmer" value="${storageURL}config/Farmer_2013122301.dat"/>
-    <asset name="activeshop" value="${storageURL}config/ActiveShop_2024071501.dat"/>
+    <asset name="activeshop" value="${storageURL}config/ActiveShop_1335435.dat"/>
     <asset name="CountryDailyGift" value="${storageURL}config/CountryDailyGift_2020083101.dat"/>
     <asset name="autoCountryCityBattle" value="${storageURL}config/AutoCountryCityBattle_2023121901.dat"/>
     <asset name="itemCompound" value="${storageURL}config/ItemCompound_2024022701.dat"/>
@@ -242,7 +242,7 @@
     <asset name="activityPreciseStrikeReward" value="${storageURL}config/ActivityPreciseStrikeReward_2020121401.dat"/>
     <asset name="activityZhuanZhuanZhuan" value="${storageURL}config/ActivityZhuanZhuanZhuan_2024010201.dat"/>
     <asset name="trenchMortarLimitedActPoint" value="${storageURL}config/TrenchMortarLimitedActPoint_2023072001.dat"/>
-    <asset name="trenchMortarLimitedActRank" value="${storageURL}config/TrenchMortarLimitedActRank_2024071601.dat"/>
+    <asset name="trenchMortarLimitedActRank" value="${storageURL}config/TrenchMortarLimitedActRank_27693465.dat"/>
     <asset name="TrenchMortarRebirth" value="${storageURL}config/TrenchMortarRebirth_2024070401.dat"/>
     <asset name="goalSet" value="${storageURL}config/GoalSet_2018062603.dat"/>
     <asset name="goalReward" value="${storageURL}config/GoalReward.dat"/>

@@ -1,7 +1,3 @@
-from pathlib import Path
 import pandas as pd
 
-path = Path(r"C:\Users\huhu\Desktop\binaryData\binaryData")
-
-for i in path.iterdir():
-    print()
+pd.read_csv(r"F:\Py\redwar\data\bin\sArmy.csv").to_excel("军营修正.xlsx")
