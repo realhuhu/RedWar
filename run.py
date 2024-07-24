@@ -47,6 +47,8 @@ def get_version():
 
 
 def download_xml(version):
+    version = version.split("_")[-1]
+
     app = requests.get(appURL % version).text
 
     with open("app.xml", "r+", encoding="utf-8") as f:
@@ -94,8 +96,11 @@ def download_redwar(xml):
 
 def decode_redwar(path: Path):
     for i in path.iterdir():
-        df = pd.read_csv(i, sep="\t", encoding="gbk")
-        df.to_csv(bin_root / f"{str(i).split('.')[-2].split('_')[1]}.csv", index=False)
+        try:
+            df = pd.read_csv(i, sep="\t", encoding="gbk")
+            df.to_csv(bin_root / f"{str(i).split('.')[-2].split('_')[1]}.csv", index=False)
+        except:
+            print(f"跳过{i}")
 
 
 def download_txt(xml):
@@ -157,21 +162,11 @@ def refresh():
 
 
 if __name__ == "__main__":
-    # version = get_version()
-    #
-    # if not version:
-    #     print("未获取到版本")
-    #     exit()
-    #
-    # if input(f"获取到版本:{version}，是否更新(y/N)>>>:") != "y":
-    #     print("已退出")
-    #     exit()
-
-    # refresh()
-    app_xml = download_xml("285443446")
-    # download_txt(app_xml)
+    app_xml = download_xml(input("输入version>>>:"))
+    refresh()
+    download_txt(app_xml)
     download_dat(app_xml)
-    # download_redwar(app_xml)
-    # decode_redwar(Path(input("输入binary路径>>>:")))
-    # download_img()
-    # rename(img_root)
+    download_redwar(app_xml)
+    decode_redwar(Path(input("输入binary路径>>>:")))
+    download_img()
+    rename(img_root)
