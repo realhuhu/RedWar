@@ -28,7 +28,7 @@
     <asset name="lang" value="${storageURL}zh_CN_19564543.txt"/>
     <asset name="fonts" value="${storageURL}flash/Fonts_zh_CN_2024071501.swf"/>
     <asset name="game" value="${storageURL}flash/RedWar_2024071601.swf"/>
-    <asset name="dll" value="${storageURL}config/dll_287785675.xml"/>
+    <asset name="dll" value="${storageURL}config/dll_178544533.xml"/>
   </assets>
   <data>
     <asset name="buildingRes" value="${storageURL}config/BuildingRes_2024061701.dat"/>
@@ -103,7 +103,7 @@
     <asset name="pvpNpcAdmiral" value="${storageURL}config/ArenaNpcAdmiral_2013052701.dat"/>
     <asset name="baseExploreGift" value="${storageURL}config/BaseExploreGift_2014110401.dat"/>
     <asset name="taskData" value="${storageURL}config/Task_2019092901.dat"/>
-    <asset name="buyQ" value="${storageURL}config/QPointShopItem_15876756.dat"/>
+    <asset name="buyQ" value="${storageURL}config/QPointShopItem_18543433.dat"/>
     <asset name="equipmentItemData" value="${storageURL}config/ItemCompound_2024022701.dat"/>
     <asset name="superWeapon" value="${storageURL}config/SuperWeaponDamage_2013071801.dat"/>
     <asset name="buildingValue" value="${storageURL}config/BuildingValue_2013081301.dat"/>
