@@ -1,7 +1,7 @@
 {
     "notice": {
-        "notice_txt": "【2024年7月24日】更新公告\n1.修复已知bug。\n2.游戏内系统及活动概率公示地址：https://www.sincetimes.com/trends_detail.html?id=78\n3.更多游戏礼包及活动预告，敬请关注官方微信公众号hjztkfb1（红警之坦克风暴）。",
-        "notice_hall": "【2024年7月24日】更新公告\n1.修复已知bug。\n2.游戏内系统及活动概率公示地址：https://www.sincetimes.com/trends_detail.html?id=78\n3.更多游戏礼包及活动预告，敬请关注官方微信公众号hjztkfb1（红警之坦克风暴）。"
+        "notice_txt": "【2024年7月31日】更新公告\n1.修复已知bug。\n2.游戏内系统及活动概率公示地址：https://www.sincetimes.com/trends_detail.html?id=78\n3.更多游戏礼包及活动预告，敬请关注官方微信公众号hjztkfb1（红警之坦克风暴）。",
+        "notice_hall": "【2024年7月31日】更新公告\n1.修复已知bug。\n2.游戏内系统及活动概率公示地址：https://www.sincetimes.com/trends_detail.html?id=78\n3.更多游戏礼包及活动预告，敬请关注官方微信公众号hjztkfb1（红警之坦克风暴）。"
     },
     "feed": {
         "gift": {
@@ -1449,6 +1449,7 @@
         "cm_effAttr_artillery": "火炮暴击率+#v1#%",
         "cm_effAttr_artillery1": "火炮暴击伤害+#v1#%",
         "cm_effAttr_hero": "我方英雄攻击力+#v1#%",
+        "cm_effAttr_precise": "参谋精准,计谋,穿透,韧性+#v1#",
         "cm_effAttr_1001_1": "我方坦克攻击力<font color = '#ff3322'>+5</font>%",
         "cm_effAttr_1001_2": "我方飞机攻击力<font color = '#000000'>-5</font>%集团军营部队",
         "atv_loginCount": "已累计登录#v1#天",
@@ -1825,6 +1826,7 @@
         "uiSkinName_3011": "12周年5月战令头像框(集团军营部队暴击+1%)",
         "uiSkinName_3012": "12周年6月战令头像框(征战世界活动我方火炮攻击+1%)",
         "uiSkinName_3013": "12周年7月战令头像框(征战世界活动我方火炮暴击伤害+1%)",
+        "uiSkinName_3014": "12周年8月战令头像框(集团军营部队生命+0.5%)",
         "scenceSkinPeriodOfValidity1": "<font color = '#ffde00'>(坦克攻击+2%,有效期：#m#月#d#日 #th#:#tm#)</font>",
         "scenceSkinPeriodOfValidity2": "<font color = '#ffde00'>(坦克攻击+5%,有效期：#m#月#d#日 #th#:#tm#)</font>",
         "scenceSkinPeriodOfValidity3": "<font color = '#ffde00'>(坦克攻击+#atk#%,有效期：#m#月#d#日 #th#:#tm#)</font>",
@@ -8987,8 +8989,8 @@
         "christmasTreesTip16": "圣诞树已升级至#v1#级，请您先“确认”刷新再进行抽取。",
         "christmasTreesTip17": "获得 今日圣诞袜 已放入背包。",
         "christmasTreesTip18": "公会累计消耗<br>姜饼人达到#v1#",
-        "christmasTreesTip19_1_1": "购买成功，已获得2880勋章，【指挥中心限定皮肤】已发送至背包，完成对应积分可领取“积分奖励”+“2880Q点解锁奖励",
-        "christmasTreesTip19_2_1": "购买成功，已获得8880勋章，【指挥中心限定皮肤】已发送至背包，完成对应积分可领取“积分奖励”+“8880Q点解锁奖励",
+        "christmasTreesTip19_1_1": "购买成功，已获得2880勋章，【统帅三军】称号已发送至背包，完成对应积分可领取“积分奖励”+“2880Q点解锁奖励",
+        "christmasTreesTip19_2_1": "购买成功，已获得8880勋章，【统帅三军】称号已发送至背包，完成对应积分可领取“积分奖励”+“8880Q点解锁奖励",
         "christmasTreesTip19_3": "购买成功，已获得#v1#勋章，完成对应积分可领取“积分奖励”+“#v2#Q点解锁奖励",
         "christmasTreesTip19_1_2": "购买成功，已获得2880勋章，【强化装备中级权益】（成功率提升20%，使用1~5级强化石每消耗5块返1块，使用6级强化石每消耗7块返1块）”；称号【强化之神】已发送至背包，完成对应积分可领取“积分奖励”+“2880Q点解锁奖励",
         "christmasTreesTip19_2_2": "购买成功，已获得8880勋章，【强化装备高级权益】（成功率提升40%，使用1~5级强化石每消耗4块返1块，使用6级强化石每消耗5块返1块）”；称号【强化之神】已发送至背包，完成对应积分可领取“积分奖励”+“8880Q点解锁奖励",
@@ -9000,7 +9002,7 @@
         "christmasTreesTip19_2_5": "购买成功，已获得8880勋章，【高级特工高级权益】（高级特工第20次额外获赠1个“专属火炮自选宝箱”）；实景树皮肤【清凉一夏】已发送至背包，完成对应积分可领取“积分奖励”+“8880Q点解锁奖励",
         "christmasTreesTip20": "#v1#许愿值可升级至#v2#级",
         "christmasTreesTip21": "圣诞节活动期间，豪饮英雄有几率抽到特殊英雄怪侠托尼、惊天柱、艾森哈特之力",
-        "christmasTreesTip22": "【高招参谋#v1#级权益】第#v2#次额外获赠紫色参谋自选卡（无论是否获得紫色参谋，第#v3#次必得，通过2月许愿树活动获取）",
+        "christmasTreesTip22": "【高招参谋#v1#级权益】第#v2#次额外获赠紫色参谋自选卡（无论是否获得紫色参谋，第#v3#次必得，通过8月许愿树活动获取）",
         "christmasTreesTip22_3": "【高招将领#v1#级权益】第#v2#次额外获赠天启紫将自选卡（无论是否获得紫色将领，第#v3#次必得，通过4月许愿树活动获取）",
         "christmasTreesTip22_4": "【配件中心#v1#级权益】每探索#v2#次将额外获赠1个“VIP配件自选宝箱”，1个“经验配件”（通过6月许愿树活动获取）",
         "christmasTreesTip22_5": "【高级特工#v1#级权益】第#v2#次额外获赠1个专属火炮自选宝箱（无论期间是否获得紫色火炮图纸、第#v3#次必得，通过7月许愿树活动获取）",
