@@ -118,9 +118,16 @@ def decode_bin(path: Path):
 
 def extract_image(source: Path, output: Path):
     print("导出图片")
+    red_war = None
     with ThreadPoolExecutor(max_workers=12) as executor:
         for i in source.iterdir():
-            executor.submit(extract, i, output)
+            if i.name == 'RedWar.swf':
+                red_war = i
+                continue
+
+            executor.submit(extract, i, output, False)
+
+    return red_war
 
 
 def rename_image(path: Path):
@@ -151,13 +158,15 @@ def refresh():
 
 async def main():
     async with aiohttp.ClientSession() as session:
-        refresh()
         app_xml = await download_xml(session, input('输入version:>>>'))
+        refresh()
+
         await download_txt(session, app_xml)
         await download_dat(session, app_xml)
         await download_swf(session, app_xml)
 
-        extract_image(swf_root, img_root)
+        red_war = extract_image(swf_root, img_root)
+        extract(red_war, img_root, True)
         rename_image(img_root)
 
         decode_bin(Path(input("输入binary路径:>>>")))

@@ -1,8 +1,8 @@
 import os
 import re
-import time
 from pathlib import Path
 from subprocess import Popen, PIPE
+from multiprocessing import Pool, cpu_count
 
 
 def check_command(command):
@@ -75,7 +75,17 @@ class SWFExtractor:
         if err:
             print(err)
 
-    def extract_images(self, swf: Path, output: Path):
+    def process_image(self, image_id, swf, output, image_type):
+        if image_type == 'jpg':
+            self.extract_jpg(swf, output, image_id)
+        elif image_type == 'png':
+            self.extract_png(swf, output, image_id)
+
+    def process_task(self, task):
+        image_id, swf, output, image_type = task
+        self.process_image(image_id, Path(swf), Path(output), image_type)
+
+    def extract_images(self, swf: Path, output: Path, p):
         if not os.path.exists(swf):
             print(f"[导出图片 {swf.name}] 文件不存在：{swf}")
             return
@@ -90,19 +100,29 @@ class SWFExtractor:
 
         output.mkdir(parents=True, exist_ok=True)
 
-        if len(jpg_list):
-            time.sleep(0.1)
-            for jpg_id in jpg_list:
-                self.extract_jpg(swf, output, str(jpg_id))
+        if p:
+            tasks = []
+            if len(jpg_list):
+                tasks.extend((str(jpg_id), str(swf), str(output), 'jpg') for jpg_id in jpg_list)
 
-        if len(png_list) != 0:
-            time.sleep(0.1)
+            if len(png_list):
+                tasks.extend((str(png_id), str(swf), str(output), 'png') for png_id in png_list)
 
-            for png_id in png_list:
-                self.extract_png(swf, output, str(png_id))
+            with Pool(cpu_count() * 2) as pool:
+                for _ in pool.imap_unordered(self.process_task, tasks):
+                    pass
+                pool.close()
+                pool.join()
+        else:
+            if len(jpg_list):
+                for jpg_id in jpg_list:
+                    self.extract_jpg(swf, output, str(jpg_id))
+
+            if len(png_list) != 0:
+                for png_id in png_list:
+                    self.extract_png(swf, output, str(png_id))
 
 
-def extract(swf: Path, output: Path):
-    print(f'', end='')
+def extract(swf: Path, output: Path, p):
     extractor = SWFExtractor()
-    extractor.extract_images(swf, output / swf.name.split(".")[0])
+    extractor.extract_images(swf, output / swf.name.split(".")[0], p)
