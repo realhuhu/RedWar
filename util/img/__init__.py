@@ -1,7 +1,6 @@
 import os
 import re
 import time
-from tqdm import tqdm
 from pathlib import Path
 from subprocess import Popen, PIPE
 
@@ -78,33 +77,32 @@ class SWFExtractor:
 
     def extract_images(self, swf: Path, output: Path):
         if not os.path.exists(swf):
-            print(f"文件不存在：{swf}")
+            print(f"[导出图片 {swf.name}] 文件不存在：{swf}")
             return
 
         jpg_list, png_list = self.get_images(swf)
 
         if not len(jpg_list) and not len(png_list):
-            print("无图片资源")
+            print(f"[导出图片 {swf.name}] 无图片资源")
             return
 
-        print(f"检测到JPG图片{len(jpg_list)}张，PNG图片{len(png_list)}张，导出至{output}")
+        print(f"[导出图片 {swf.name}] JPG图片{len(jpg_list)}张，PNG图片{len(png_list)}张，导出至{output}")
 
         output.mkdir(parents=True, exist_ok=True)
 
         if len(jpg_list):
             time.sleep(0.1)
-            for jpg_id in tqdm(jpg_list):
+            for jpg_id in jpg_list:
                 self.extract_jpg(swf, output, str(jpg_id))
 
         if len(png_list) != 0:
             time.sleep(0.1)
 
-            for png_id in tqdm(png_list):
+            for png_id in png_list:
                 self.extract_png(swf, output, str(png_id))
 
 
 def extract(swf: Path, output: Path):
-    print(f"正在导出{swf}中的图片资源")
+    print(f'', end='')
     extractor = SWFExtractor()
-    extractor.extract_images(swf, output)
-    print()
+    extractor.extract_images(swf, output / swf.name.split(".")[0])

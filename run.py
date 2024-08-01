@@ -1,18 +1,20 @@
 import re
 import json
 import shutil
+import asyncio
 from tqdm import tqdm
 from io import StringIO
 from hashlib import md5
 from pathlib import Path
 from xml.dom.minidom import parse
-from datetime import datetime, timedelta
+from concurrent.futures import ThreadPoolExecutor
 
-import requests
+import aiohttp
 import numpy as np
 import pandas as pd
 from PIL import Image
-from util import decode, download, extract
+
+from util import decode, extract, fetch_file, fetch_txt
 
 root = Path(__file__).absolute().parent / "data"
 img_root = root / "img"
@@ -26,75 +28,86 @@ storageURL = "https://100616028cdn-1251006671.file.myqcloud.com/100616028/res/20
 swfURL = "https://100616028cdn-1251006671.file.myqcloud.com/100616028/res/20120522/winPanel/"
 
 
-def get_version():
-    current = datetime.now()
-    seq_num = 4
-
-    while datetime.now() - current < timedelta(days=5):
-        version = f"{current.strftime('%Y%m%d')}{seq_num:02d}"
-        print(f"尝试获取版本{version}")
-
-        if seq_num == 1:
-            current -= timedelta(days=1)
-            seq_num = 4
-        else:
-            seq_num -= 1
-
-        if "-46628" not in requests.get(appURL % version).text:
-            return version
-
-    return None
-
-
-def download_xml(version):
+async def download_xml(session: aiohttp.ClientSession, version):
     version = version.split("_")[-1]
 
-    app = requests.get(appURL % version).text
+    if version:
+        app, _ = await fetch_txt(session, appURL % version, "app.xml")
 
-    with open("app.xml", "r+", encoding="utf-8") as f:
-        f.seek(0)
-        f.truncate(0)
-        f.write(app)
+        with open("app.xml", "r+", encoding="utf-8") as f:
+            f.seek(0)
+            f.truncate(0)
+            f.write(app)
 
     dom = parse("app.xml")
     return dom.documentElement
 
 
-def download_dat(xml):
+async def download_txt(session: aiohttp.ClientSession, xml):
+    for i in xml.getElementsByTagName("assets")[0].childNodes:
+        if i.nodeName != "asset":
+            continue
+
+        if i.getAttribute("name") == "lang":
+            url = i.getAttribute("value").replace("${storageURL}", storageURL)
+            txt, _ = await fetch_txt(session, url, i.getAttribute("name"), encoding='utf-8-sig')
+
+            with open(txt_root / f"lang.json", "w", encoding="utf-8") as f:
+                json.dump(
+                    json.loads(txt.replace(r"\“", "").replace(r"\”", "")),
+                    f,
+                    ensure_ascii=False,
+                    indent=4,
+                )
+
+
+async def download_dat(session: aiohttp.ClientSession, xml):
+    tasks = []
     for i in xml.getElementsByTagName("data")[0].childNodes:
         if i.nodeName != "asset":
             continue
 
         url = i.getAttribute("value").replace("${storageURL}", storageURL)
         name = url.split("/")[-1].split(".")[0]
-        name = re.sub(r'_\d+', '', name)
+        name = re.sub(r'_\d+$', '', name)
+        tasks.append(fetch_txt(session, url, name, encoding="gbk"))
 
-        print(f"获取dat：{name}")
-
-        response = requests.get(url)
-        response.encoding = "gbk"
-        if response.text.endswith("03a33cd9a31ee58c"):
-            res = decode(response.text)
+    results = await asyncio.gather(*tasks)
+    for txt, name in results:
+        if txt.endswith("03a33cd9a31ee58c"):
+            res = decode(txt)
             res = "\n".join(res.split('\n')[:-1])
             res = pd.read_csv(StringIO(res), sep='\t')
             data = res.fillna('')
         else:
-            data = pd.read_csv(StringIO(response.text), sep="\t")
+            data = pd.read_csv(StringIO(txt), sep="\t")
         data.to_csv(web_root / f"{name}.csv", index=False)
 
 
-def download_redwar(xml):
+async def download_swf(session: aiohttp.ClientSession, xml):
+    tasks = []
+
     for i in xml.getElementsByTagName("assets")[0].childNodes:
         if i.nodeName != "asset":
             continue
 
         if i.getAttribute("name") == "game":
             url = i.getAttribute("value").replace("${storageURL}", storageURL)
-            name, path = download(url, swf_root)
-            extract(path, img_root / name)
+            tasks.append(fetch_file(session, url, swf_root))
+
+    panels = pd.read_csv("data/web/WindowResData.csv")
+    panels.columns = panels.iloc[0]
+    panels = panels.drop(0)
+    total, _ = panels.shape
+
+    for k, panel in panels.iterrows():
+        _, swf_name = panel
+        tasks.append(fetch_file(session, swfURL + swf_name, swf_root))
+
+    await asyncio.gather(*tasks)
 
 
-def decode_redwar(path: Path):
+def decode_bin(path: Path):
     for i in path.iterdir():
         try:
             df = pd.read_csv(i, sep="\t", encoding="gbk")
@@ -103,39 +116,14 @@ def decode_redwar(path: Path):
             print(f"跳过{i}")
 
 
-def download_txt(xml):
-    for i in xml.getElementsByTagName("assets")[0].childNodes:
-        if i.nodeName != "asset":
-            continue
-
-        if i.getAttribute("name") == "lang":
-            url = i.getAttribute("value").replace("${storageURL}", storageURL)
-            res = requests.get(url)
-            res.encoding = "utf-8-sig"
-
-            with open(txt_root / f"lang.json", "w", encoding="utf-8") as f:
-                json.dump(
-                    json.loads(res.text.replace(r"\“", "").replace(r"\”", "")),
-                    f,
-                    ensure_ascii=False,
-                    indent=4,
-                )
+def extract_image(source: Path, output: Path):
+    print("导出图片")
+    with ThreadPoolExecutor(max_workers=12) as executor:
+        for i in source.iterdir():
+            executor.submit(extract, i, output)
 
 
-def download_img():
-    panels = pd.read_csv("data/web/WindowResData.csv")
-    panels.columns = panels.iloc[0]
-    panels = panels.drop(0)
-    total, _ = panels.shape
-
-    for k, panel in panels.iterrows():
-        _, swf_name = panel
-        print(f"({k}/{total})", end="\t")
-        name, path = download(swfURL + swf_name, swf_root)
-        extract(path, img_root / name)
-
-
-def rename(path: Path):
+def rename_image(path: Path):
     print("重命名图片")
     for i in tqdm(list(path.iterdir())):
         for j in i.iterdir():
@@ -161,12 +149,19 @@ def refresh():
     bin_root.mkdir(exist_ok=True, parents=True)
 
 
+async def main():
+    async with aiohttp.ClientSession() as session:
+        refresh()
+        app_xml = await download_xml(session, input('输入version:>>>'))
+        await download_txt(session, app_xml)
+        await download_dat(session, app_xml)
+        await download_swf(session, app_xml)
+
+        extract_image(swf_root, img_root)
+        rename_image(img_root)
+
+        decode_bin(Path(input("输入binary路径:>>>")))
+
+
 if __name__ == "__main__":
-    app_xml = download_xml(input("输入version>>>:"))
-    refresh()
-    download_txt(app_xml)
-    download_dat(app_xml)
-    download_redwar(app_xml)
-    decode_redwar(Path(input("输入binary路径>>>:")))
-    download_img()
-    rename(img_root)
+    asyncio.run(main())

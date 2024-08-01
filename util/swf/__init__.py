@@ -1,17 +1,29 @@
-import requests
-from pathlib import Path
+import re
+import asyncio
 from typing import Tuple
 
+import aiohttp
+from pathlib import Path
 
-def download(url: str, dirname: Path) -> Tuple[str, Path]:
-    dirname.mkdir(exist_ok=True, parents=True)
+sem = asyncio.Semaphore(10)
 
-    print(f"下载{url}到{dirname}")
-    response = requests.get(url)
-    name = url.split("/")[-1].split(".")[0].split("_20")[0]
-    path = dirname / f"{name}.swf"
 
-    with open(path, "wb") as f:
-        f.write(response.content)
+async def fetch_file(session: aiohttp.ClientSession, url: str, dirname: Path):
+    async with sem:
+        name = url.split("/")[-1].split(".")[0]
+        name = re.sub(r'_\d{8,10}$', '', name)
+        path = dirname / f"{name}.swf"
 
-    return name, path
+        print(f"[下载文件 {name}] {url.split('/')[-1]} 到 {path}")
+
+        dirname.mkdir(exist_ok=True, parents=True)
+        async with session.get(url) as response:
+            with open(path, "wb") as f:
+                f.write(await response.read())
+
+
+async def fetch_txt(session: aiohttp.ClientSession, url, name, encoding="utf-8") -> Tuple[str, str]:
+    async with sem:
+        print(f"[下载文本 {name}] {url.split('/')[-1]}")
+        async with session.get(url) as res:
+            return await res.text(encoding=encoding), name
