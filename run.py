@@ -2,11 +2,11 @@ import re
 import json
 import shutil
 import asyncio
-from tqdm import tqdm
 from io import StringIO
 from hashlib import md5
 from pathlib import Path
 from xml.dom.minidom import parse
+from multiprocessing import cpu_count
 from concurrent.futures import ThreadPoolExecutor
 
 import aiohttp
@@ -119,7 +119,7 @@ def decode_bin(path: Path):
 def extract_image(source: Path, output: Path):
     print("导出图片")
     red_war = None
-    with ThreadPoolExecutor(max_workers=12) as executor:
+    with ThreadPoolExecutor(max_workers=cpu_count() * 2) as executor:
         for i in source.iterdir():
             if i.name == 'RedWar.swf':
                 red_war = i
@@ -131,18 +131,22 @@ def extract_image(source: Path, output: Path):
 
 
 def rename_image(path: Path):
+    def rename(img_dir, img_path):
+        try:
+            img = Image.fromarray(np.asarray(Image.open(img_path)))
+            img.save(img_dir / f"img{md5(img.tobytes()).hexdigest()}{img_path.suffix}")
+        except FileExistsError:
+            pass
+        except Exception as e:
+            print(f"{e}:{img_path}")
+        finally:
+            img_path.unlink()
+
     print("重命名图片")
-    for i in tqdm(list(path.iterdir())):
-        for j in i.iterdir():
-            try:
-                img = Image.fromarray(np.asarray(Image.open(j)))
-                img.save(i / f"img{md5(img.tobytes()).hexdigest()}{j.suffix}")
-            except FileExistsError:
-                pass
-            except Exception as e:
-                print(f"{e}:{j}")
-            finally:
-                j.unlink()
+    with ThreadPoolExecutor(max_workers=cpu_count() * 2) as executor:
+        for i in path.iterdir():
+            for j in i.iterdir():
+                executor.submit(rename, i, j)
 
 
 def refresh():
